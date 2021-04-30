@@ -1,9 +1,8 @@
 module.exports = {
   chromeSelector: '.wrapper > *, #root > *, .story-decorator > *',
-  diffingEngine: 'pixelmatch',
   configurations: {
     'chrome.laptop': {
-      target: 'chrome.docker',
+      target: 'chrome.app',
       width: 1366,
       height: 768,
     },
