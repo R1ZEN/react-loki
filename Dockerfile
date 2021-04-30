@@ -1,11 +1,6 @@
 FROM debian:stable
 
-COPY ./.loki .
-COPY ./.storybook .
-COPY ./public .
-COPY ./src .
-COPY ./loki.config.js .
-COPY ./package.json .
+COPY . .
 
 RUN apt-get update -qqy \
   && apt-get -qqy install \
